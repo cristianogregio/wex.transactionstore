@@ -29,11 +29,11 @@ public class PurchaseTransactionConvertController
         this.currencyConversionService = currencyConversionService;
     }
 
-    @GetMapping("/{id}/convert")
-    public ResponseEntity<?> convertTransaction(@PathVariable UUID id, @RequestParam String targetCurrency)
+    @GetMapping("/{transactionId}/convert")
+    public ResponseEntity<?> convertTransaction(@PathVariable UUID transactionId, @RequestParam String targetCurrency)
     {
 
-        Optional<PurchaseTransaction> transactionOpt = transactionRepository.findById(id);
+        Optional<PurchaseTransaction> transactionOpt = transactionRepository.findById(transactionId);
 
         if (transactionOpt.isEmpty())
         {
