@@ -1,6 +1,7 @@
 # **Purchase Transaction API Documentation**
 
-Welcome to the Purchase Transaction API documentation. This API allows you to create, retrieve, update, delete, and convert purchase transaction values to different currencies based on exchange rates. Below is an overview of the available endpoints and how to use them.
+This is Spring Boot application with H2 Database. Just clone the code and let the Maven manager the dependencies and then start the application.
+This API allows you to create, retrieve, update, delete, and convert purchase transaction values to different currencies based on exchange rates. Below is an overview of the available endpoints and how to use them. 
 
 ---
 
